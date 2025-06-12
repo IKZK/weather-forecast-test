@@ -32,7 +32,7 @@ document.getElementById('get-weather').addEventListener('click', () => {
       document.querySelector('#tomorrow td').textContent = area.weathers[1];
       document.querySelector('#dayAfterTomorrow td').textContent = area.weathers[2];
 
-      // 気温の表示（データがなければ「データなし」）
+      // 気温の表示（データがなければ「データなし」と表示）
       document.querySelector('#todayHighTemperature td').textContent =
         tempsArea?.max ? tempsArea.max + '℃' : 'データなし';
 
