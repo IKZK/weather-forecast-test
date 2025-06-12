@@ -23,7 +23,7 @@ document.getElementById('get-weather').addEventListener('click', () => {
       //平均気温、最高、最低気温を含むエリアデータ
       const tempsArea = temp.tempAverage?.areas?.[0];
 
-      // 表示部分
+      // 表示される部分
       document.querySelector('#publishingOffice td').textContent = main.publishingOffice;
       document.querySelector('#reportDatetime td').textContent = main.reportDatetime;
       document.querySelector('#targetArea td').textContent = area.area.name;
@@ -43,3 +43,5 @@ document.getElementById('get-weather').addEventListener('click', () => {
       alert(error.message);
     });
 });
+
+
